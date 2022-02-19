@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="calculator">
+
+
+        <div class="calculator__frame">
+            <div class="calculator__frame-control">
+                <div class="calculator__description">
+                    <img class="calculator__icon" src="img/calculator__icon.png" alt="calculator__icon.png">
+                    <div class="calculator__name">Calculator</div>
+                </div>
+                <div class="calculator__controls">
+                    <button class="calculator__control-button calculator__controls_minimize">
+                        <img src="img/control-panel_minimize.png" alt="control-panel_minimize.png">
+                    </button>
+                    <button class="calculator__control-button calculator__controls_expand">
+                        <img src="img/control-panel_expand.png" alt="control-panel_expand.png">
+
+                    </button>
+                    <button class="calculator__control-button calculator__controls_close">
+                        <img src="img/control-panel_close.png" alt="control-panel_close.png">
+
+                    </button>
+                </div>
+            </div>
+            <div class="calculator__body">
+                <div class="calculator__control-panel">
+                    <button class="calculator__view control-panel__button">View</button>
+                    <button class="calculator__edit control-panel__button">Edit</button>
+                    <button class="calculator__help control-panel__button">Help</button>
+
+                </div>
+                <div class="calculator__interface">
+                    <div class="input-wrapper">
+                        <input name="calculator__sub-input" value="" type="text" disabled class="input_sub">
+                        <input name="calculator__input" value="0" type="text" disabled class="input_main">
+                        <div class="memoryIndicator-wrapper">
+                            <div class="memoryIndicator">M</div>
+                        </div>
+                    </div>
+
+                    <table class="calculator__buttons">
+                        <tr class="calculator__buttons-row">
+                            <td class="calculator__button-wrapper">
+                                <button class="calculator__button letterFontSize memoryButton">MC</button>
+                            </td>
+                            <td class="calculator__button-wrapper">
+                                <button class="calculator__button cleanMainInput letterFontSize memoryButton">MR</button>
+                            </td>
+                            <td class="calculator__button-wrapper">
+                                <button class="calculator__button cleanMainInput letterFontSize memoryButton">MS</button>
+                            </td>
+                            <td class="calculator__button-wrapper">
+                                <button class="calculator__button letterFontSize memoryButton">M+</button>
+                            </td>
+                            <td class="calculator__button-wrapper">
+                                <button class="calculator__button letterFontSize memoryButton">M-</button>
+                            </td>
+
+
+
+                        </tr>
+                        <tr class="calculator__buttons-row">
+                            <td class="calculator__button-wrapper">
+                                <button class="calculator__button backspace">
+                                    <img src="img/backspaceArrow.png" alt="backspaceArrow.png">
+                                </button>
+                            </td>
+                            <td class="calculator__button-wrapper">
+                                <button class="calculator__button cleanMainInputButton letterFontSize">CE</button>
+                            </td>
+                            <td class="calculator__button-wrapper">
+                                <button class="calculator__button cleanAllInputsButton letterFontSize">C</button>
+                            </td>
+                            <td class="calculator__button-wrapper">
+                                <button class="calculator__button operationFontSize changeSingBtn state">+-</button>
+                            </td>
+                            <td class="calculator__button-wrapper">
+                                <button class="calculator__button state">qrs</button>
+                            </td>
+
+                        </tr>
+                        <tr class="calculator__buttons-row">
+                            <td class="calculator__button-wrapper">
+                                <button class="number calculator__button digitFontSize">7</button>
+                            </td>
+                            <td class="calculator__button-wrapper">
+                                <button class="number calculator__button digitFontSize">8</button>
+                            </td>
+                            <td class="calculator__button-wrapper">
+                                <button class="number calculator__button digitFontSize">9</button>
+                            </td>
+                            <td class="calculator__button-wrapper">
+                                <button class="calculator__button operation operationFontSize">/</button>
+                            </td>
+                            <td class="calculator__button-wrapper">
+                                <button class="calculator__button operation operationFontSize">%</button>
+                            </td>
+                        </tr>
+                        <tr class="calculator__buttons-row">
+                            <td class="calculator__button-wrapper">
+                                <button class="number calculator__button digitFontSize">4</button>
+                            </td>
+                            <td class="calculator__button-wrapper">
+                                <button class="number calculator__button digitFontSize">5</button>
+                            </td>
+                            <td class="calculator__button-wrapper">
+                                <button class="number calculator__button digitFontSize">6</button>
+                            </td>
+                            <td class="calculator__button-wrapper">
+                                <button class="calculator__button operation operationFontSize">*</button>
+                            </td>
+                            <td class="calculator__button-wrapper">
+                                <button class="calculator__button state">1/x</button>
+                            </td>
+                        </tr>
+                        <tr class="calculator__buttons-row">
+                            <td class="calculator__button-wrapper">
+                                <button class="number calculator__button digitFontSize">1</button>
+                            </td>
+                            <td class="calculator__button-wrapper">
+                                <button class="number calculator__button digitFontSize">2</button>
+                            </td>
+                            <td class="calculator__button-wrapper">
+                                <button class="number calculator__button digitFontSize">3</button>
+                            </td>
+                            <td class="calculator__button-wrapper">
+                                <button class="calculator__button operation operationFontSize">-</button>
+                            </td>
+                            <td rowspan="2" class="calculator__button-wrapper">
+                                <button class="calculator__button resultButton operationFontSize">=</button>
+                            </td>
+                        </tr>
+
+                        <tr class="calculator__buttons-row">
+                            <td colspan="2" class="calculator__button-wrapper">
+                                <button class="number calculator__button digitFontSize zeroButton">0</button>
+                            </td>
+
+                            <td class="calculator__button-wrapper">
+                                <button class="calculator__button commaButton digitFontSize">,</button>
+                                <!--                            TODO загуглить как запятая на англ и добавить гласс-->
+                            </td>
+                            <td class="calculator__button-wrapper">
+                                <button class="calculator__button operation operationFontSize">+</button>
+                            </td>
+
+                        </tr>
+
+
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script defer src="calculator.js">
+</script>
+</body>
+</html>
